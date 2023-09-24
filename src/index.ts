@@ -19,7 +19,7 @@ export async function run(): Promise<void> {
     }
 
     // get buildah cli
-    const buildahPath = await io.which("buildah", true);
+    const buildahPath = "/usr/bin/buildah"
     const cli: BuildahCli = new BuildahCli(buildahPath);
 
     // print buildah version
